@@ -1,0 +1,3 @@
+package gotester // import "github.com/skeptycal/gotester"
+
+func Example()
