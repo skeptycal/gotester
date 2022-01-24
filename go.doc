@@ -1,3 +1,5 @@
 package gotester // import "github.com/skeptycal/gotester"
 
+func Check(err error) error
+func Die(err error)
 func Example()

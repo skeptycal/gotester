@@ -16,7 +16,7 @@ import (
 
 func getGoFiles() []string {
 	matches, err := filepath.Glob("**/*.go")
-	die(err)
+	Die(err)
 
 	return matches
 }

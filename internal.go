@@ -15,19 +15,19 @@ var (
 func init() {
 	var err error
 	pwd, err = os.Getwd()
-	die(err)
+	Die(err)
 }
 
-// check will log an error message if err is not nil
-func check(err error) error {
+// Check will log an error message if err is not nil
+func Check(err error) error {
 	if err == nil {
 		return err
 	}
 	return checkErr(err)
 }
 
-// die will exit with an error message if err is not nil
-func die(err error) {
+// Die will exit with an error message if err is not nil
+func Die(err error) {
 	if err == nil {
 		return
 	}
