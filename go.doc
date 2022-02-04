@@ -3,3 +3,12 @@ package gotester // import "github.com/skeptycal/gotester"
 func Check(err error) error
 func Die(err error)
 func Example()
+func InitialCapacity(capacity int) int
+type Any = types.Any
+type GotFunc func(args ...Param) Any
+type Param interface{ ... }
+    func NewParam(name string, arg Any) Param
+type ParamMap interface{ ... }
+    func NewParamMap(name string, args ...Param) ParamMap
+type Test interface{ ... }
+    func NewTest(name string, want Any, got GotFunc, wantErr bool, args paramMap) Test

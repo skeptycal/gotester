@@ -4,6 +4,11 @@ import (
 	"os"
 
 	errorlogger "github.com/skeptycal/errorlogger"
+	"github.com/skeptycal/types"
+)
+
+type (
+	Any = types.Any
 )
 
 var (
